@@ -60,10 +60,10 @@ module.exports = {
     },
     
 
-    renderServicesMain: (req, res) => {
+    renderReservesMain: (req, res) => {
         db.Services.findAll()
             .then(services => {
-                return res.render('vista-Servicios', {
+                return res.render('vista-reservas', {
                     services
                 });
             })

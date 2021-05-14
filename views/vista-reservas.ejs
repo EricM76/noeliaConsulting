@@ -34,7 +34,12 @@
                             <p class="card-text">
                               <%= service.description %>
                             </p>
-                            <a href="/services/detalle/<%= service.id %>" class="btn btn-primary ">Ver mas</a>
+<!-- Principio del widget de enlace de Calendly -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<a class="btn btn-primary  href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/mibellezademujer/manos-spa'});return false;">Reservar</a>
+<!-- Final del widget de enlace de Calendly -->
+                
                           </div>
                         </div>
                       </div>

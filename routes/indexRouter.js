@@ -5,7 +5,7 @@ const router = Router();
 const { 
     renderHome,
     renderProductsMain,
-    renderServicesMain,
+    renderReservesMain,
     renderDetailProduct,
     renderDetailService
 } = require('../controllers/indexController');
@@ -19,7 +19,7 @@ router.get('/products', renderProductsMain);
 router.get('/products/detalle/:id', renderDetailProduct);
 
 // rencerizar vista de servicios
-router.get('/services', renderServicesMain);
+router.get('/reservas', renderReservesMain);
 //renderiza vista de detalle de servicio
 router.get('/services/detalle/:id', renderDetailService);
 
